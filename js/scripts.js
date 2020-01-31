@@ -1,41 +1,33 @@
 //back
-function Pizza (size, protein, spice, veggie) {
+function Pizza (size, meat, sauce, veggie){
   this.size = size,
-  this.protein = protein,
-  this.spice = spice,
+  this.meat = meat,
+  this.sauce = sauce,
   this.veggie = veggie
+}
+
+Pizza.prototype.pizzaSum = function(){
+  var pizzaPrice = size
+  if (this.meat === 3) {
+  pizzaPrice += 6
+} else if (this.meat === 2){
+  pizzaPrice += 4
+} else if (this.meat === 1){
+  pizzaPrice += 2
+} else if (this.veggie === 3){
+  pizzaPrice += 3
+} else if (this.veggie === 2){
+  pizzaPrice += 2 
+} else if (this.veggie === 1){
+  pizzaPrice += 1
+} 
 
 }
 
-Pizza.prototype.makePizza = function(){
-  return this.size + 5;
-}
-
-
-
-
-
-// //front
-
-
-
-
+//front
 $(document).ready(function(){
-  $("form").submit(function(event){
+  $("form").submit(function(){
     event.preventDefault();
-
-    var size = parseInt($("select#size").val());
-    var top1 = $("select#top1").val();
-    var top2 = $("select#top2").val();
-    var top3 = $("select#top3").val();
-
-    var myPizza = new Pizza (size, top1, top2, top3);
-    console.log(myPizza);
-    
-   
-
-
-
-
   })
+
 })

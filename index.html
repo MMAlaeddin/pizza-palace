@@ -21,24 +21,21 @@
         <option value="20">Large</option>
       </select>
       </div>
-      <label>Choose a protein</label>
-      <select class="form-control" id="top1">
-        <option>Extra Cheese</option>
-        <option>Pepperoni</option>
-        <option>Sausage</option>
-      </select>
-      <label>Choose a spice level:</label>  
-      <select class="form-control" id="top2">
-        <option>Jalapenos</option>
-        <option>Peppercinis</option>
-        <option>Bell Peppers</option>
-      </select>
-      <label>Choose a veggie:</label>      
-      <select class="form-control" id="top3">
-        <option>Tomato</option>
-        <option>Onion</option>
-        <option>Arugula</option>
-      </select>
+      <label>Choose a protein ($2):</label><br>
+      <input type="checkbox" name="meat" value="pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+      <input type="checkbox" name="meat" value="tofu"> Tofu<br>
+
+      <label>Choose the saucey goodness (FREE!):</label>  <br>
+      <input type="checkbox" name="sauce" value="tomato"> Tomato<br>
+      <input type="checkbox" name="sauce" value="alfredo"> Alfredo<br>
+      <input type="checkbox" name="sauce" value="evoo"> EVOO<br>
+
+      <label>Choose a veggie ($1):</label>      <br>
+      <input type="checkbox" name="veggie" value="jalapeno"> Jalapenos<br>
+      <input type="checkbox" name="veggie" value="bellPeppers"> Bell Peppers<br>
+      <input type="checkbox" name="veggie" value="extra"> Extra Cheese<br>
+      <br>
       <button type="submit" class="btn-danger">Order Up!</button>
     </form>
     <div class="price">
