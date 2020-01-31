@@ -8,11 +8,12 @@ function Pizza (size, top1, top2, top3) {
 }
 
 function Tops () {
-  this.pizza = []
+  this.pizzas = []
+  console.log(pizzas);
 }
 
 Pizza.prototype.addPizza = function(){
-  Pizza.push(myPizza)
+  pizzas.push(myPizza)
   
 
 
@@ -45,8 +46,9 @@ $(document).ready(function(){
     var top3 = $("select#top3").val();
 
     var myPizza = new Pizza (size, top1, top2, top3)
+   
 
-    $(".price").text(myPizza);
+    $(".price").text(size + top1 + top2 + top3);
 
 
   })
