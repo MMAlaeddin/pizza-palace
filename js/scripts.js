@@ -30,16 +30,14 @@ $(document).ready(function(){
     event.preventDefault();
 
     var size = parseInt($("select#size").val());
-    var meat = parseInt($("input:checkbox[name=meat]:checked").val());
-    var veggie = parseInt($("input:checkbox[name=veggie]:checked").val());
-    var sauce = parseInt($("input:checkbox[name=sauce]:checked").val())
+    var meat = parseInt($("input:radio[name=meat]:checked").val());
+    var veggie = parseInt($("input:radio[name=veggie]:checked").val());
+    var sauce = parseInt($("input:radio[name=sauce]:checked").val())
 
     var myPizza = new Pizza(size, meat, sauce, veggie)
     console.log(myPizza)
 
-    var fullPizza = parseInt($(pizzaPrice + this.meat + this.veggie).val());
-    console.log(fullPizza)
-
+    $(".price").text(size + meat + veggie);
 
   })
 
