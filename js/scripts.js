@@ -37,7 +37,8 @@ $(document).ready(function(){
     var myPizza = new Pizza(size, meat, sauce, veggie)
     console.log(myPizza)
 
-  
+    var fullPizza = parseInt($(pizzaPrice + this.meat + this.veggie).val());
+    console.log(fullPizza)
 
 
   })
