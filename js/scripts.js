@@ -1,31 +1,15 @@
 //back
-function Pizza (size, top1, top2, top3) {
+function Pizza (size, protein, spice, veggie) {
   this.size = size,
-  this.top1 = top1,
-  this.top2 = top2,
-  this.top3 = top3
+  this.protein = protein,
+  this.spice = spice,
+  this.veggie = veggie
 
 }
 
-function Tops () {
-  this.pizzas = []
-  console.log(pizzas);
+Pizza.prototype.makePizza = function(){
+  return this.size + 5;
 }
-
-Pizza.prototype.addPizza = function(){
-  pizzas.push(myPizza)
-  
-
-
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -40,15 +24,17 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
 
-    var size = $("select#size").val();
+    var size = parseInt($("select#size").val());
     var top1 = $("select#top1").val();
     var top2 = $("select#top2").val();
     var top3 = $("select#top3").val();
 
-    var myPizza = new Pizza (size, top1, top2, top3)
+    var myPizza = new Pizza (size, top1, top2, top3);
+    console.log(myPizza);
+    
    
 
-    $(".price").text(size + top1 + top2 + top3);
+
 
 
   })
