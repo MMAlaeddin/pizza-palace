@@ -28,6 +28,14 @@ Pizza.prototype.pizzaSum = function(){
 $(document).ready(function(){
   $("form").submit(function(){
     event.preventDefault();
+    
+    var meats = parseInt($("input:checkbox[name=meat]:checked").val())
+    var veggies = parseInt($("input:checkbox[name=veggie]:checked").val())
+
+    $(".price").text(meats + veggies);
+  
+
+
   })
 
 })
