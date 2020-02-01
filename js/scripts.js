@@ -21,10 +21,8 @@ Pizza.prototype.sum = function() {
     pizzaPrice += 3;
 } else if (this.veggie === "evoo") {
     pizzaPrice += 3;
-    console.log(pizzaPrice)
 }
 return pizzaPrice
-
 }
 
 //front
@@ -39,7 +37,7 @@ $(document).ready(function(){
 
     var myPizza = new Pizza(size, meat, sauce, veggie)
 
-
+    $("ul").show(myPizza.pizzaPrice);
 
 
   });

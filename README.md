@@ -6,18 +6,30 @@
 
 ## Description
 
-_A webpage where the user can choose toppings and size for a pizza they'd like and see the cost of it as well._
+A webpage where the user can choose toppings and size for a pizza they'd like and see the cost of it as well.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Copy this link https://github.com/MMAlaeddin/pizza-palace
+* Open your terminal
+* Input: git clone https://github.com/MMAlaeddin/pizza-palace
+* Input: code .
+* Drag index.html into your browser
+* Select a size
+* Select a protein
+* Select a sauce
+* Select a veggie
+* Click "Order Up!"
+* View your price!
 
 ## Specs
-*
+* Behavior: Select size
+    * Input: User selects size through dropdown
+    * Back-end: adds initial value to pizza
+
+* Behavior: Meat options will add to value
+    * Input: Meat selection
+    * Output: Adds to price of pizza
 
 
 ## Known Bugs
