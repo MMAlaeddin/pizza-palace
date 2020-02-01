@@ -6,8 +6,9 @@ function Pizza (size, meat, sauce, veggie){
   this.veggie = veggie
 }
 
-Pizza.prototype.pizzaSum = function() {
-  var pizzaPrice = this.size;
+
+Pizza.prototype.sum = function() {
+  var pizzaPrice = this.size
   if (this.meat === "pepperoni") {
     pizzaPrice += 5;
 } else if (this.meat === "sausage") {
@@ -20,8 +21,10 @@ Pizza.prototype.pizzaSum = function() {
     pizzaPrice += 3;
 } else if (this.veggie === "evoo") {
     pizzaPrice += 3;
+    console.log(pizzaPrice)
 }
-console.log(pizzaPrice);
+return pizzaPrice
+
 }
 
 //front
@@ -35,8 +38,9 @@ $(document).ready(function(){
     var sauce = $("input:radio[name=sauce]:checked").val();
 
     var myPizza = new Pizza(size, meat, sauce, veggie)
-    // console.log(myPizza)
-    // $(".price").text(myPizza.pizzaSum());
+
+
+
 
   });
 
