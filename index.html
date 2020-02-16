@@ -16,23 +16,18 @@
       <div class="form-group">
       <label class="size">Choose a size:</label>
       <select class="form-control" id="size">
-        <option value="10">Small - $10</option>
-        <option value="15">Medium - $15</option>
-        <option value="20">Large - $20</option>
+        <option value="sm">Small - $10</option>
+        <option value="md">Medium - $15</option>
+        <option value="lg">Large - $20</option>
       </select>
       </div>
-      <label>Choose a protein ($5):</label><br>
-        <input type="radio" name="meat" value="pepperoni"> Pepperoni<br>
-        <input type="radio" name="meat" value="sausage"> Sausage<br>
-        <input type="radio" name="meat" value="tofu"> Tofu<br>
-      <label>Choose the saucey goodness (FREE!):</label>  <br>
-        <input type="radio" name="sauce" value="0"> Tomato<br>
-        <input type="radio" name="sauce" value="0"> Alfredo<br>
-        <input type="radio" name="sauce" value="0"> EVOO<br>
-      <label>Choose a veggie ($3):</label><br>
-        <input type="radio" name="veggie" value="jalapenos"> Jalapenos<br>
-        <input type="radio" name="veggie" value="bell"> Bell Peppers<br>
-        <input type="radio" name="veggie" value="evoo"> Extra Cheese<br>
+      <label>Choose toppings ($1):</label><br>
+        <input type="checkbox" name="topping" value="1"> Pepperoni<br>
+        <input type="checkbox" name="topping" value="1"> Sausage<br>
+        <input type="checkbox" name="topping" value="1"> Tofu<br>
+        <input type="checkbox" name="topping" value="1"> Jalapenos<br>
+        <input type="checkbox" name="topping" value="1"> Bell Peppers<br>
+        <input type="checkbox" name="topping" value="1"> Extra Cheese<br>
         <br>
       <button type="submit" class="btn-danger">Order Up!</button>
     </form>
