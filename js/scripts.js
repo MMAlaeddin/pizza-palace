@@ -30,7 +30,7 @@ $(document).ready(function() {
 
       var myPizza = new Pizza(0, "", [])
 
-      myPizza.addSize$("select#size").val();
+      myPizza.addSize("select#size").val();
 
       var topping = parseInt($("input:checkbox[name=topping]:checked").val());
       myPizza.addTops(toppings)
