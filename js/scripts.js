@@ -34,12 +34,12 @@ $(document).ready(function() {
 
       myPizza.addSize("select#size").val();
 
-      var topping = parseInt($("input:checkbox[name=topping]:checked").val());
+  $("input:checkbox[name=topping]:checked").val();
       myPizza.addTops(toppings)
 
 
 
-      $("ul").show(myPizza.pizzaPrice);
+      $("ul").text(myPizza.pizzaPrice);
 
 
   });
