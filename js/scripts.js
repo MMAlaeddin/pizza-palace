@@ -13,7 +13,7 @@ Pizza.prototype.addTops = function(toppings) {
   this.toppers.push(toppings)
 }
 
-Pizza.prototype.price = function(pricing) {
+Pizza.prototype.price = function() {
   if (this.size === "sm") {
     pizzaPrice = 10
 } else if (this.size === "md") {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
       var myPizza = new Pizza()
 
-      myPizza.addSize("select#size").val();
+      myPizza.addSize($("select#size").val());
 
   $("input:checkbox[name=topping]:checked").val();
       myPizza.addTops(toppings)
