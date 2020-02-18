@@ -34,7 +34,7 @@ $(document).ready(function() {
     myPizza.addSize($("select#size").val());
 
     $("input:checkbox[name=topping]:checked").each(function(topping) {
-      myPizza.addTops(toppings)
+      myPizza.addTops(topping)
     });
 
     myPizza.price();
